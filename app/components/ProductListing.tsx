@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 "use client";
 import React, { useEffect, useState } from "react";
@@ -71,6 +71,7 @@ export default function ProductList({
         filteredProducts.sort((a, b) => b.price - a.price);
       } else if (sortBy === "newest") {
         filteredProducts.sort(
+          // eslint-disable-next-line
           (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
         );
       }
