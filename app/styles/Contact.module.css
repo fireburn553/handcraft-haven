@@ -1,0 +1,90 @@
+.contactForm {
+  background-color: #f2f2f2;
+  padding: 100px;
+  border-radius: 10px;
+  max-width: 500px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+.contactForm label {
+  color: black;
+}
+
+.contactForm .heading {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  margin-bottom: 10px;
+}
+
+#message {
+  resize: none;
+  height: 80px; 
+  width: 100%; 
+  overflow: auto; 
+}
+
+.contactForm input,
+.contactForm #message {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%; 
+}
+
+.contactForm input:focus,
+.contactForm #message:focus {
+  outline: none;
+  box-shadow: 0 0 5px #144212;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contactForm button[type="submit"] {
+  background-color: #144212;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; 
+}
+
+.contactForm button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 600px) {
+  .contactForm {
+    padding: 15px;
+  }
+
+  .contactForm .heading {
+    font-size: 20px;
+  }
+
+  .contactForm input,
+  .contactForm #message {
+    font-size: 14px;
+  }
+
+  .contactForm button[type="submit"] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
