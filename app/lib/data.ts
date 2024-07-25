@@ -8,7 +8,6 @@ import { unstable_noStore as noStore } from 'next/cache';
 console.log(process.env.POSTGRES_URL)
 export async function fetchProducts() {
     try {
-        noStore();
         console.log("Fetching products from the database...");
         const result = await sql<Product>`
         SELECT * 
